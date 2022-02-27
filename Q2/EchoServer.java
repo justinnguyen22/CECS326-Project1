@@ -23,7 +23,7 @@ public class  EchoServer
 
             // Read in next line from buffered reader 
             String line = br.readLine();
-
+            line = line.replace("client", "server");
             // while bufferedreader does not read a null terminator
             while (line != null) {
                 System.out.println("Server: " + line);
@@ -37,7 +37,7 @@ public class  EchoServer
             
         }
         catch(Exception e) {
-            System.out.println("Error");
+            System.out.println(e);
         }
     }
 }

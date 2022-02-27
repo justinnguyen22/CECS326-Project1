@@ -46,8 +46,8 @@ public class EchoClient
 		clientSocket.close();
 		scanner.close();
 
-		} catch (IOException ex) {
-			System.out.println("Error");
+		} catch (Exception e) {
+			System.out.println(e);
 		}
 	}
 }
